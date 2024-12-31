@@ -1,17 +1,31 @@
-# A Terribly Weighty Subject - Java Template
+# A Terribly Weighty Subject (Java)
 
-## Instructions
+You can find the instructions for this lab [here](https://morethanequations.com/Computer-Science/Labs/a-terribly-weighty-subject). Create a new repository on GitHub to house your code. Be sure to make the repository public so that I can view and grade it.
 
-You can find the instructions for this lab [here](https://cyrusvandrevala.com/teaching/csc/214/labs/a-terribly-weighty-subject.html).
+We will use [Gradle](https://gradle.org/) to automate common development tasks.
 
-You only need to update `src/main/java/com/csc/Converter.java` with your implementation. That being said, you are welcome to add additional
+## Building the App
 
-## Testing
+You can build the app using:
 
-In this lab, you only need to update `src/main/java/com/csc/Converter.java` with your implementation. The other files build the project, run automated tests, etc.
+```bash
+./gradlew build
+```
 
-You are welcome to run the automated tests for this project to check to make sure everything works beforehand. In order to do this, perform the following steps.
+## Testing the App
 
-1. Install the [Gradle](https://gradle.org/install/) build tool.
-2. From the root of the project, type `gradle` into the command line. This will set up and build the project.
-3. From the root of the project, type `gradle test` into the command line. This will run all of the automated tests.
+You can run the automated suite of tests using:
+
+```bash
+./gradlew test
+```
+
+## Running the App
+
+You can run the app using:
+
+```bash
+./gradlew run --quiet --console=plain
+```
+
+The two flags passed to the `run` command hide the noisy output from Gradle. You can see the details from Gradle by omitting those flags.
